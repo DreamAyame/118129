@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Order Form</title>
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="products.html">產品</a></li>
+        <li><a href="opinion.html">意見</a></li>
+        <li><a href="about.html">關於我們</a></li>
+    </ul>
+</nav>
+<body>
+    <h2>歡迎使用我們的反饋和訂單表單</h2>
+    <form action="submit.php" method="POST">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">郵箱：</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="feedback">反饋意見：</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="order">訂單詳情：</label><br>
+        <textarea id="order" name="order" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
